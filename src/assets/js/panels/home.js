@@ -220,6 +220,20 @@ class Home {
         document.querySelector('.settings-btn').addEventListener('click', () => {
             changePanel('settings');
         });
+
+        const shell = require('electron').shell;
+
+        document.querySelector('.tiktok-btn').addEventListener('click', () => {
+            shell.openExternal("https://www.tiktok.com/@narlife_officiel");
+        });
+
+        document.querySelector('.discord-btn').addEventListener('click', () => {
+            shell.openExternal("https://discord.gg/hG9Z4xcSSZ");
+        });
+
+        document.querySelector('.insta-btn').addEventListener('click', () => {
+            shell.openExternal("https://instagram.com/narlife_rp.off?igshid=OGQ5ZDc2ODk2ZA==");
+        });
     }
 
     async getdate(e) {

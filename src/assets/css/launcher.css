@@ -11,17 +11,20 @@ body {
     margin: 0;
     padding: 0;
     user-select: none;
-    background: linear-gradient(#00000066, #00000066), url("../images/background/light.jpg") black no-repeat center center scroll;
+    background: linear-gradient(#00000066, #00000066), url("../images/background/light.gif") black no-repeat center center scroll;
+    background-size: cover;
 }
 
 img {
     -webkit-user-drag: none;
     user-select: none;
+    border-radius: 40%;
 }
 
 .dragbar {
     position: fixed;
-    background: #00000080;
+    background: #141001;
+    opacity: 90%;
     top: 0px;
     left: 0px;
     width: 100%;

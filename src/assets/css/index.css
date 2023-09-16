@@ -5,11 +5,14 @@ body {
     letter-spacing: 0px;
     -webkit-app-region: drag;
     user-select: none;
+    animation: border 2s infinite;
+    border-radius: 5%;
 }
 
 img {
     -webkit-user-drag: none;
     user-select: none;
+    border-radius: 35%;
 }
 
 .splash {
@@ -107,4 +110,18 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color: rgb(255, 0, 0);
     border-radius: 10px;
+}
+
+@keyframes border {
+    0% {
+        border: yellow 2px solid;
+    }
+
+    50% {
+        border: white 2px solid;
+    }
+
+    100% {
+        border: yellow 2px solid;
+    }
 }
