@@ -122,3 +122,10 @@
     color: #F1F1F1;
     cursor: default;
 }
+
+.card-body img {
+    border-radius: 30%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #eed12a;
+}

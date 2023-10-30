@@ -103,14 +103,14 @@
  ******************************************************************************/
 
 .add-account {
-    width: 80%;
+    width: 40%;
     height: 10%;
     border: none;
     border-radius: 15px;
     font: normal normal bold 30px/40px Poppins;
-    color: #D1D1D1;
+    color: #eed12a;
     background-color: #303030;
-    box-shadow: 1px 2px 5px #585858;
+    box-shadow: 1px 2px 5px #524603;
     margin: 20px 0;
     margin-bottom: 10px;
 }

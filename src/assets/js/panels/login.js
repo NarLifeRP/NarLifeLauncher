@@ -38,7 +38,6 @@ class Login {
     async loginMojang() {
         let mailInput = document.querySelector('.Mail')
         let passwordInput = document.querySelector('.Password')
-        let cancelMojangBtn = document.querySelector('.cancel-mojang')
         let infoLogin = document.querySelector('.info-login')
         let loginBtn = document.querySelector(".login-btn")
         let mojangBtn = document.querySelector('.mojang')
@@ -48,13 +47,7 @@ class Login {
             document.querySelector(".login-card-mojang").style.display = "block";
         })
 
-        cancelMojangBtn.addEventListener("click", () => {
-            document.querySelector(".login-card").style.display = "block";
-            document.querySelector(".login-card-mojang").style.display = "none";
-        })
-
         loginBtn.addEventListener("click", async () => {
-            cancelMojangBtn.disabled = true;
             loginBtn.disabled = true;
             mailInput.disabled = true;
             passwordInput.disabled = true;
@@ -63,7 +56,6 @@ class Login {
 
             if (mailInput.value == "") {
                 infoLogin.innerHTML = "Entrez votre Pseudo"
-                cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
@@ -72,7 +64,6 @@ class Login {
 
             if (passwordInput.value == "") {
                 infoLogin.innerHTML = "Entrez votre mot de passe"
-                cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
@@ -83,7 +74,6 @@ class Login {
 
             if (account_connect == null || account_connect.error) {
                 console.log(err)
-                cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
@@ -110,8 +100,6 @@ class Login {
             accountSelect(account.uuid)
             changePanel("home");
 
-            cancelMojangBtn.disabled = false;
-            cancelMojangBtn.click();
             mailInput.value = "";
             loginBtn.disabled = false;
             mailInput.disabled = false;
@@ -123,8 +111,6 @@ class Login {
 
     async loginOffline() {
         let mailInput = document.querySelector('.Mail')
-        let passwordInput = document.querySelector('.Password')
-        let cancelMojangBtn = document.querySelector('.cancel-mojang')
         let infoLogin = document.querySelector('.info-login')
         let loginBtn = document.querySelector(".login-btn")
         let mojangBtn = document.querySelector('.mojang')
@@ -142,7 +128,7 @@ class Login {
             infoLogin.innerHTML = "Connexion en cours...";
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre adresse email / Nom d'utilisateur"
+                infoLogin.innerHTML = "Entrez votre nom d'utilisateur"
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 return
@@ -184,8 +170,6 @@ class Login {
             accountSelect(account.uuid)
             changePanel("home");
 
-            cancelMojangBtn.disabled = false;
-            cancelMojangBtn.click();
             mailInput.value = "";
             loginBtn.disabled = false;
             mailInput.disabled = false;

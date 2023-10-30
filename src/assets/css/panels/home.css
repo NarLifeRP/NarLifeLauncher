@@ -68,12 +68,13 @@
 
 .icon-tiktok {
     font-size: 40px;
-    background-image: url("https://img.icons8.com/color/48/tiktok--v1.png");
+    background: rgba(0,0,0,0);
+    background-image: url("https://img.icons8.com/doodle/48/tiktok--v2.png");
 }
 
 .discord-btn {
     position: absolute;
-    top: 10px;
+    top: 8px;
     right: 150px;
     text-align: center;
     height: 50px;
@@ -90,13 +91,14 @@
 
 .icon-discord {
     font-size: 40px;
-    background-image: url("https://img.icons8.com/plasticine/50/discord-square.png"); 
+    background: rgba(0,0,0,0);
+    background-image: url("https://img.icons8.com/plasticine/55/discord-square.png"); 
 }
 
 .insta-btn {
     position: absolute;
     top: 10px;
-    right: 210px;
+    right: 200px;
     text-align: center;
     height: 50px;
     width: 50px;
@@ -112,6 +114,7 @@
 
 .icon-insta {
     font-size: 40px;
+    background: rgba(0,0,0,0);
     background-image: url("https://img.icons8.com/fluency/48/instagram-new.png"); 
 }
 
@@ -178,7 +181,6 @@
 .news-list {
     position: relative;
     overflow: auto;
-    width: 100%;
 }
 
 .news-list::-webkit-scrollbar {
@@ -189,6 +191,8 @@
     margin-bottom: 1rem;
     transition: opacity 1s;
     opacity: .4;
+    width: 70%;
+    float: right;
 }
 
 .news-block:hover {
@@ -291,7 +295,7 @@
 
 .server {
     position: relative;
-    width: 100%;
+    width: 150%;
     height: 75px;
     background-color: #292929;
     border-radius: 10px;
